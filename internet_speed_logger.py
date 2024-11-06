@@ -1,15 +1,14 @@
 import speedtest
 import time
 from datetime import datetime
-# TODO pip install speedtest_cli
+# TODO: pip install speedtest_cli
 
 def log_internet_speed():
     try:
-        # Create a Speedtest instance
         st = speedtest.Speedtest()
         st.get_best_server()
-        download_speed = st.download() / 1_000_000  # Convert to Mbps
-        upload_speed = st.upload() / 1_000_000  # Convert to Mbps
+        download_speed = st.download() / 1_000_000
+        upload_speed = st.upload() / 1_000_000
         print(f"down/up speeds in Mbps: {download_speed} | {upload_speed}")
     except Exception as e:
         print(f"Error: {e}")
