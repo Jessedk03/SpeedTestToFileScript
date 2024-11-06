@@ -7,4 +7,4 @@ then:
 pip install speedtest-cli
 ``
 
-just let it run and it will log your download / upload speeds to the internet_speed_log.txt every 30 minutes ( you can change this how ever you would like it )
+just let it run and it will log your download / upload speeds to the <b> <i>internet_speed_log.txt </i> </b> every 30 minutes ( you can change this how ever you would like it )
