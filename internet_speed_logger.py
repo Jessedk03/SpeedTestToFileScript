@@ -12,8 +12,8 @@ def log_internet_speed():
         st.get_best_server()
         download_speed = st.download() / 1_000_000  # Convert to Mbps
         upload_speed = st.upload() / 1_000_000  # Convert to Mbps
-        download_speedMB = download_speed * 0.125
-        upload_speedMB = upload_speed * 0.125
+        download_speedMB = download_speed * 0.125 # Convert Mbps to mb/s
+        upload_speedMB = upload_speed * 0.125 # Convert Mbps to mb/s
         print(f"down/up speeds in Mbps: {download_speed} | {upload_speed}")
     except Exception as e:
         print(f"Error: {e}")
